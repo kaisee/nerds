@@ -1,6 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+	line-height: 24px;
 	font-weight: 400;
 	color: #283136;
 	background-color: #fff;
@@ -236,6 +237,122 @@ body {
 	margin-bottom: 35px;
 }
 /* // Advantage list*/
+
+/* Company information */
+.company-info {
+	padding-top: 80px;
+	padding-bottom: 76px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.nerds-information {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.information-block {
+	width: 650px;
+	min-height: 370px;
+}
+
+.company-info-slogan {
+	margin: 0;
+	margin-bottom: 35px;
+	font-size: 45px;
+	font-weight: 500;
+	line-height: 45px;
+	color: #000000;
+}
+
+.information-block p {
+	margin-bottom: 47px;
+}
+
+p.company-info-subtitle {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.company-services {
+	margin: 0;
+	padding: 0;
+}
+
+.company-services li {
+	position: relative;
+	
+	margin-bottom: 35px;
+	padding-left: 38px;
+	list-style: none;
+}
+
+.company-services li:last-child {
+	margin-bottom: 0;
+}
+
+.company-services li::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 25px;
+	height: 2px;
+	background-color: #fb575b;
+}
+
+.company-counts {
+	width: 360px;
+}
+
+.nerds-illustration {
+	width: 360px;
+	height: 208px;
+	margin-top: -40px;
+	margin-bottom: 41px;
+}
+
+.nerds-illustration img {
+	width: 360px;
+	height: 208px;
+}
+
+.company-counts p.company-info-subtitle {
+	margin-bottom: 49px;
+	text-align: center;
+}
+
+.company-counts table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.company-counts table tr:first-child {
+	font-size: 45px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.company-counts table th {
+	width: 105px;
+	padding-bottom: 27px;
+	text-align: left;
+}
+
+.company-counts table td {
+	
+}
+
+/* // Company information */
 
 /* Decor*/
 .button {
