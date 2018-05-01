@@ -451,6 +451,82 @@ p.company-info-subtitle {
 }
 /* // Footer Contacts*/
 
+/* Footer social media*/
+.footer-social {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.footer-social .container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-social-media {
+	width: 260px;
+	height: 80px;
+}
+
+.social-net-list {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.social-net-list .social-net-item {
+	display: inline-block;
+	margin-right: 11px;
+	list-style: none;
+	vertical-align: middle;
+}
+
+.social-net-list .social-net-item:last-child {
+	margin-right: 0;
+}
+
+.social-net-list .social-net-item a {
+	position: relative;
+	display: block;
+	width: 79px;
+	height: 79px;
+	background-color: #e1e1e1;
+	text-decoration: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.social-net-list a svg {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+}
+
+.footer-promo {
+	width: 545px;
+	min-height: 65px;
+}
+
+.footer-promo-slogan {
+	margin: 0;
+	margin-bottom: 12px;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 36px;
+	color: #000;
+}
+
+.footer-promo p {
+	color: #444;
+}
+/* // Footer social media*/
+
 /* // Footer*/
 
 /* Decor*/
@@ -472,6 +548,7 @@ p.company-info-subtitle {
 	background-color: #fb565a;
 	border-radius: 3px;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 
 .button-book {
