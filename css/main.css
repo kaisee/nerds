@@ -50,10 +50,20 @@ body {
 	height: 65px;
 }
 
+.top-section .header-logo:hover {
+	opacity: 0.8;
+}
+
+.top-section .header-logo:active,
+.top-section .header-logo:focus {
+	opacity: 0.3;
+}
+
 .main-navigation .main-menu {
 	min-width: 440px;
 	margin: 0;
 	padding: 0;
+	padding-top: 20px;
 	font-weight: 500;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -65,9 +75,12 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: bottom;
 }
 
 .main-menu .main-menu-item {
+	position: relative;
+	
 	list-style: none;
 }
 
@@ -77,8 +90,28 @@ body {
 	text-transform: uppercase;
 }
 
+.main-menu .main-menu-item a:hover {
+	color: #fb565a;
+}
+
+.main-menu .main-menu-item a:active,
+.main-menu .main-menu-item a:focus {
+	color: #000;
+	opacity: 0.3;
+}
+
+.main-menu-item .item-active::after {
+	content: "";
+	position: absolute;
+	
+	width: 100%;
+	height: 2px;
+	background-color: #fb565a;
+}
+
 .user-block {
 	min-width: 115px;
+	padding-top: 20px;
 	text-decoration: none;
 }
 
@@ -86,6 +119,15 @@ body {
 	margin-left: 26px;
 	color: #000;
 	text-transform: uppercase;
+}
+
+.user-block:hover span {
+	color: #fb565a;
+}
+
+.user-block:active span,
+.user-block:focus span {
+	color: rgba(0, 0, 0, .3);
 }
 
 /* // Верхний ряд блока Header */
@@ -373,21 +415,24 @@ p.company-info-subtitle {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: middle;
+	align-items: center;
 }
 
 .project-list-item {
 	position: relative;
 	width: 300px;
 	height: 90px;
+	padding-right: 44px;
+	padding-left: 44px;
 	list-style: none;	
 	text-align: center;	
+	box-sizing: border-box;
 }
 
 .project-list-item::after {
 	position: absolute;
-	top: 0;
-	left: 50%;
+	top: 10px;
+	right: 0;
 	content: '';
 	display: block;
 	width: 2px;
@@ -395,8 +440,21 @@ p.company-info-subtitle {
 	background-color: #eee;
 }
 
-.product-list-item img {
+.project-list-item:last-child::after {
+	display: none;
+}
+
+.project-list-item a img {
 	opacity: 0.2;
+}
+
+.project-list-item a:hover img {
+	opacity: 1;
+}
+
+.project-list-item a:active img,
+.project-list-item a:focus img {
+	opacity: .1;
 }
 
 /* // Company projects */
@@ -473,24 +531,24 @@ p.company-info-subtitle {
 	height: 80px;
 }
 
-.social-net-list {
+.social-buttons {
 	margin: 0;
 	padding: 0;
 	font-size: 0;
 }
 
-.social-net-list .social-net-item {
+.social-buttons .social-button {
 	display: inline-block;
 	margin-right: 11px;
 	list-style: none;
 	vertical-align: middle;
 }
 
-.social-net-list .social-net-item:last-child {
+.social-buttons .social-button:last-child {
 	margin-right: 0;
 }
 
-.social-net-list .social-net-item a {
+.social-buttons .social-button a {
 	position: relative;
 	display: block;
 	width: 79px;
@@ -501,10 +559,38 @@ p.company-info-subtitle {
 	cursor: pointer;
 }
 
-.social-net-list a svg {
+.social-buttons .social-button a:hover {
+	background-color: #e74246;
+}
+
+.social-buttons .social-button a:active,
+.social-buttons .social-button a:focus {
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #d7373b;
+}
+
+.social-buttons .social-button a:active svg,
+.social-buttons .social-button a:focus svg {
+	opacity: .3;
+}
+
+.social-buttons a svg {
 	position: absolute;
+}
+
+.social-buttons a .button-vk {
+	top: 45%;
+	left: 35%;
+}
+
+.social-buttons a .button-fb {
 	top: 40%;
-	left: 40%;
+	left: 43%;
+}
+
+.social-buttons a .button-insta {
+	top: 40%;
+	left: 39%;
 }
 
 .footer-promo {
@@ -551,6 +637,17 @@ p.company-info-subtitle {
 	cursor: pointer;
 }
 
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:active,
+.button:focus {
+	color: rgba(255, 255, 255, .3);
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
 .button-book {
 	display: block;
 	width: 160px;
@@ -574,12 +671,45 @@ p.company-info-subtitle {
 	background-color: #fb565a;
 }
 
+.button-book-red:hover {
+	background-color: #e74246;
+}
+
+.button-book-red:active,
+.button-book-red:focus {
+	color: rgba(255, 255, 255, .3);
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #d7373b;
+}
+
 .button-book-green {
 	background-color: #00ca74;
 }
 
+.button-book-green:hover {
+	background-color: #00bc6c;
+}
+
+.button-book-green:active,
+.button-book-green:focus {
+	color: rgba(255, 255, 255, .3);
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #00aa62;
+}
+
 .button-book-yellow {
 	background-color: #efc84a;
+}
+
+.button-book-yellow:hover {
+	background-color: #eab534;
+}
+
+.button-book-yellow:active,
+.button-book-yellow:focus {
+	color: rgba(255, 255, 255, .3);
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #e5a722;
 }
 
 .button--write-us {
