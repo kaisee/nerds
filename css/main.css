@@ -349,10 +349,68 @@ p.company-info-subtitle {
 }
 
 .company-counts table td {
-	
+	width: 105px;
 }
 
 /* // Company information */
+
+/* Company projects */
+
+.our-projects {
+	padding-top: 46px;
+	padding-bottom: 44px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.projects-list {
+	margin: 0;
+	padding: 0;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: middle;
+}
+
+.project-list-item {
+	position: relative;
+	width: 300px;
+	height: 90px;
+	list-style: none;	
+	text-align: center;	
+}
+
+.project-list-item::after {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	content: '';
+	display: block;
+	width: 2px;
+	height: 52px;
+	background-color: #eee;
+}
+
+.product-list-item img {
+	opacity: 0.2;
+}
+
+/* // Company projects */
+
+
+/* Footer */
+
+/* Footer Contacts*/
+.footer-contacts {
+	padding-top: 80px;
+}
+/* // Footer Contacts*/
+
+/* // Footer*/
 
 /* Decor*/
 .button {
