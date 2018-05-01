@@ -42,5 +42,73 @@
 			</section>			
 		</div>
 	</header>
+	<main>
+		<div class="container">
+			<section class="filter">
+				<h2 class="visually-hidden">Фильтр товаров</h2>
+				<form action="" method="get">
+					<fieldset>
+						<legend class="legend-price">Стоимость:</legend>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar" style="margin-left: 0%; width: 80%"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label class="min-price">От <input name="min-price" type="text" value="0"></label>
+								<label class="max-price">До<input name="max-price" type="text" value="30000"></label>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+						<ul class="grid-option">
+							<li class="grid-option-item">		<input type="radio" name="grid-option-group" value="adaptive" id="adaptive" class="visually-hidden filter-input-radio" checked>
+								<label for="adaptive">Адаптивная</label>
+							</li>
+							<li class="grid-option-item">
+								<input type="radio" name="grid-option-group" value="fixed" id="fixed" class="visually-hidden filter-input-radio">
+								<label for="fixed">Фиксированная</label>
+							</li>
+							<li class="grid-option-item">
+								<input type="radio" name="grid-option-group" value="responsive" id="responsive" class="visually-hidden filter-input-radio">
+								<label for="responsive">Резиновая</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<ul class="special-option">
+							<li class="special-option-item">	<input type="checkbox" name="special-option-group" value="slider" id="slider" class="visually-hidden filter-input-checkbox" checked>
+								<label for="slide">Слайдер</label>
+							</li>
+							<li class="special-option-item">
+								<input type="checkbox" name="special-option-group" value="benefits" id="benefits" class="visually-hidden filter-input-checkbox">
+								<label for="benefits">Блок преимуществ</label>
+							</li>
+							<li class="special-option-item">
+								<input type="checkbox" name="special-option-group" value="news-block" id="news-block" class="visually-hidden filter-input-checkbox">
+								<label for="news-block">Новости</label>
+							</li>
+							<li class="special-option-item">
+								<input type="checkbox" name="special-option-group" value="gallery" id="gallery" class="visually-hidden filter-input-checkbox">
+								<label for="gallery">Галерея</label>
+							</li>
+							<li class="special-option-item">
+								<input type="checkbox" name="special-option-group" value="cart" id="cart" class="visually-hidden filter-input-checkbox">
+								<label for="cart">Корзина</label>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</section>
+			<section class="product-catalog">
+				<h2 class="visually-hidden">Каталог товаров</h2>
+			</section>
+		</div>
+	</main>
 </body>
 </html>
