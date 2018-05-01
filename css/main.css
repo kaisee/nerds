@@ -407,6 +407,47 @@ p.company-info-subtitle {
 /* Footer Contacts*/
 .footer-contacts {
 	padding-top: 80px;
+	position: relative;
+}
+
+.footer-contacts iframe {
+}
+
+.company-contacts {
+	position: absolute;
+	top: 134px;
+	left: 140px;
+
+	width: 319px;
+	height: 308px;
+	padding-top: 54px;
+	padding-left: 50px;
+	padding-bottom: 47px;
+	padding-right: 50px;
+	background-color: #fff;
+
+	box-sizing: border-box;
+}
+
+.company-contacts h3.company-contacts-title {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.company-contacts p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.company-contacts p:last-child {
+	margin-bottom: 37px;
 }
 /* // Footer Contacts*/
 
@@ -462,6 +503,10 @@ p.company-info-subtitle {
 
 .button-book-yellow {
 	background-color: #efc84a;
+}
+
+.button--write-us {
+	width: 219px;
 }
 
 /* // Decor*/
