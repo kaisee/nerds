@@ -743,6 +743,7 @@ main .container {
 /* Template List */
 .template-list {
 	margin: 0;
+	margin-bottom: 30px;
 	padding: 0;
 
 	display: -webkit-flex;
@@ -785,6 +786,14 @@ main .container {
 	opacity: .12;
 }
 
+.template-list-item:hover .template-description {
+	display: block;
+}
+
+.template-list-item .template-list-item::before:hover {
+	opacity: 1;
+}
+
 .template-description {
 	display: none;
 	
@@ -819,13 +828,6 @@ main .container {
 	margin-bottom: 25px;
 }
 
-.template-list-item:hover .template-description {
-	display: block;
-}
-
-.template-list-item:hover .template-list-item::before:hover {
-	opacity: 1;
-}
 /* // Template List */
 
 /* // Templates */
