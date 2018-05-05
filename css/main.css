@@ -684,6 +684,7 @@ main .container {
 	width: 760px;
 	min-height: 2097px;
 	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .sorting {
@@ -829,6 +830,60 @@ main .container {
 }
 
 /* // Template List */
+
+
+/* Pagination */
+.pagination-list {
+	width: 450px;
+	min-height: 50px;
+	margin: 0;
+	padding: 0;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.pagination-list-item {
+	margin-right: 11px;
+	list-style: none;
+}
+
+.pagination-list-item a {
+	display: block;
+	padding-top: 19px;
+	padding-bottom: 18px;
+	
+	width: 50px;
+	height: 50px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	background-color: #eeeeee;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+.pagination-list-item-current a {
+	padding-top: 16px;
+	background: transparent;
+	border: 3px solid #dbdbdb;
+	box-sizing: border-box;
+}
+
+.pagination-list-item-next a {
+	width: 260px;
+}
+/* // Pagination */
 
 /* // Templates */
 
