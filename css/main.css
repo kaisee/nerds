@@ -670,6 +670,108 @@ p.company-info-subtitle {
 
 /* Templates */
 
+main .container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.product-catalog {
+	width: 760px;
+	min-height: 2097px;
+	padding-top: 60px;
+}
+
+.sorting {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.sorting-list {
+	width: 360px;
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.sorting .sorting-title {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.sorting-list .sorting-item {
+	list-style-type: none;
+}
+
+.sorting-list .sorting-item a {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #000000;
+	opacity: 0.3;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.sorting-list .sorting-item a:hover,
+.sorting-list .sorting-item a:active,
+.sorting-list .sorting-item a:focus {
+	opacity: 1;
+}
+
+/* Template List */
+.template-list {
+	margin: 0;
+	padding: 0;
+}
+
+.template-list-item {
+	position: relative;
+	
+	width: 360px;
+	height: 616px;
+	padding-top: 40px;
+	margin-bottom: 33px;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+.template-list-item::before {
+	content: "";
+	display: block;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 360px;
+	height: 40px;
+	background: url(../img/browser.svg) no-repeat top center;
+	opacity: .12;
+}
+/* // Template List */
+
 /* // Templates */
 
 
