@@ -744,6 +744,19 @@ main .container {
 .template-list {
 	margin: 0;
 	padding: 0;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .template-list-item {
@@ -755,6 +768,7 @@ main .container {
 	margin-bottom: 33px;
 	list-style-type: none;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 
 .template-list-item::before {
@@ -769,6 +783,48 @@ main .container {
 	height: 40px;
 	background: url(../img/browser.svg) no-repeat top center;
 	opacity: .12;
+}
+
+.template-description {
+	display: none;
+	
+	height: 231px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding-top: 30px;
+	padding-bottom: 43px;
+
+	text-align: center;
+	background-color: #eeeeee;
+	box-sizing: border-box;
+}
+
+.template-description .template-list-title {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.template-description p {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	color: #666666;
+	margin-bottom: 25px;
+}
+
+.template-list-item:hover .template-description {
+	display: block;
+}
+
+.template-list-item:hover .template-list-item::before:hover {
+	opacity: 1;
 }
 /* // Template List */
 
@@ -1034,6 +1090,11 @@ main .container {
 .button-send {
 	border: none;
 	outline: none;
+}
+
+.template-list .button-buy-template {
+	display: inline-block;
+	width: 200px;
 }
 
 /* // Decor*/
